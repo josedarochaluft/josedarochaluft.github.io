@@ -25,10 +25,10 @@
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li>
                     <a href="#contact" class="nav-link">Contact</a>
@@ -40,12 +40,15 @@
             <h6>Software Engineer & Game Programmer</h6>
         </div>
     </header>
-    
+
     <section class="portfolio" id="portfolio">
-        <div class="container">
+        <div class="container" id="portfolio-container">
             <div class="section-heading">
                 <h1>Portfolio</h1>
                 <h6>View some of my recent work</h6>
+            </div>
+            <div class="portfolio-item" id="video">
+                <iframe id="embed" width="400" height="225" src="https://www.youtube.com/embed/hhhmwnRMOT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="150">
@@ -138,14 +141,9 @@
                    <h6>Myself</h6>
                </div>
                <p>
-                   My name is José, I am a Software Engineer who focuses on video game development and loves learning new things. I've made games using Unity, Unreal Engine 4, GameMaker:Studio and Love2d. I also made simple games from scratch using C++ and OpenGL. I am fluent in English and speak Portuguese natively.</p>
-               <div class="social-media">
-                    <ul class="nav-list">
-                        <li><a href="https://www.linkedin.com/in/jose-da-rocha-luft" target="_blank"  class="icon-link"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/josedarochaluft" target="_blank class="icon-link"><i class="fab fa-github"></i></a></li>
-                        <!-- <li><a href="https://name.itch.io/" target="_blank" class="icon-link"><i class="fab fa-itch-io"></i></a></li> -->
-                    </ul>
-                </div>
+                   My name is José, I am a Software Engineer and Game Programmer.
+                   I've made games using Unity, Unreal Engine 4, GameMaker:Studio and Love2d.
+                   I also made simple games from scratch using C++ and OpenGL. I am fluent in English and speak Portuguese natively.</p>
            </div>
         </div>
     </section>
@@ -319,6 +317,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="source/jquery.fitvids.js"></script>
     <script src="source/main.js"></script>
+    <script>
+        $("#embed").fitVids();
+    </script>
 </body>
 </html>

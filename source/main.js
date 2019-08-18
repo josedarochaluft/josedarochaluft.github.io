@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+    $('#portfolio-container').fitVids();
+
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');

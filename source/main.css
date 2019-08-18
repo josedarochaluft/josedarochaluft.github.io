@@ -164,7 +164,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, #ffe838, #3883ff);
+    background: linear-gradient(to right, #ffe838, #24412b);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -209,7 +209,7 @@ li{
     font-weight: 1;
     font-family: 'Varela Round', sans-serif;
     
-    background: linear-gradient(to top, #ffe838, #9eb5db);
+    background: linear-gradient(to top, #fae548, #24412b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -539,6 +539,13 @@ li{
 
 /*End animations*/
 
+/*Start embedded video*/
+#video{
+    margin-bottom: 10rem;
+}
+
+/*End embedded video*/
+
 /*Start media queries*/
 @media screen and (min-width: 1080px)
 {
@@ -558,7 +565,7 @@ li{
     
     */
     .landing-text h1{
-        font-size: 15rem;
+        font-size: 12rem;
     }
 
     .landing-text h6{
