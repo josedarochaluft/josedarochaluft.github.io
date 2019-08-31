@@ -23,6 +23,12 @@ $(document).ready(function () {
             scrollTop: 0
         }, 2000);
     });
+    
+    $('#down').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 2000); 
+    });
 
     //Display modal when clicking view details
     $('.cta').on('click', function() { 

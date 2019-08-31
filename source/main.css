@@ -137,6 +137,7 @@ li{
 .nav-link:focus{
     background: linear-gradient(to top, #ffe838, #3883ff);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -211,6 +212,7 @@ li{
     
     background: linear-gradient(to top, #fae548, #24412b);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
     user-select: none;
@@ -220,6 +222,28 @@ li{
     font-size: 2rem;
     font-weight: 300;
 }
+
+.down{
+    position: absolute;
+    left:50%;
+    top:90%;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-left:-3.75rem;
+    margin-top:-3.75rem;
+    background-color: #eee;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.down i{
+    color: #0f171d;
+    font-size: 4rem;
+    margin: auto;
+}
+
 /*End header*/
 
 /*Start about*/
@@ -608,6 +632,10 @@ li{
     .icon-container i{
         font-size: 4rem;
     }
+
+    .down{ 
+        display: none;     
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -649,10 +677,6 @@ li{
     .portfolio-description{
         margin: 0;
         order: 2;
-    }
-
-    .up{
-        right: 2rem;
     }
 
     .modal-content {
